@@ -6,7 +6,7 @@ const DisplayEntries = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://mongo-functionality-server.vercel.app');
+        const response = await fetch('https://mongo-functionality-server.vercel.app', {mode: 'no-cors'});
         if (response.ok) {
           const jsonData = await response.json();
           setData(jsonData);
