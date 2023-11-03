@@ -1,0 +1,260 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  color: rgb(11, 11, 69);
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    left, 
+    rgb(0, 0, 0) 0%, 
+    rgb(139, 139, 139) 100%
+  );
+  background: -webkit-gradient(
+    left top, 
+    right top, 
+    color-stop(0%, rgb(227, 0, 0)), 
+    color-stop(100%, rgb(0, 0, 0))
+  );
+  background: -webkit-linear-gradient(
+    bottom, 
+    rgb(255, 255, 255) 0%, 
+    rgb(168, 168, 168) 100%
+  );
+  overflow: hidden;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="btn"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #fff;
+  border: 0px solid #fff;
+  color: #0645AD;
+  padding: 5px 0px;
+}
+
+input[type="btn"]:hover {
+  background: #fff;
+  color: black;
+}
+
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #00d2be;
+  border: 1px solid #00d2be;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+  color: black;
+}
+
+.signupbtn{
+  display:  flex;
+  justify-content: center;
+}
+
+.btn{
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #fff;
+  border: none;
+  color: #0645AD;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.btn:hover{
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.YTLogo {
+  padding-left: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.GTLogo {
+  padding-left: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.ChannelName {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 18px;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: rgb(11, 11, 69);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Apply these styles to the container that has the overflow and needs a scrollbar */
+.container-with-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.container-with-scrollbar::-webkit-scrollbar-track {
+  background: #000000; /* Track color */
+}
+
+.container-with-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(0, 38, 142); /* Thumb color */
+  border-radius: 5px; /* Roundness of the thumb */
+}
+
+.container-with-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 120, 145); /* Thumb color on hover */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between each box */
+  padding: 0 20px; /* Padding on either side */
+  justify-content: center; /* Center the grid */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.repo-box {
+  flex: 0 0 calc(50% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #444444;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: max-height 0.4s ease;
+  max-height: 100px;
+  color:rgb(228, 228, 228);
+}
+
+.repo-box.expanded {
+  max-height: 300px;
+  margin-bottom: 0;
+}
+
+.repo_description {
+  text-align: center;
+  margin-bottom: -15px;
+  color:rgb(180, 180, 180);
+  padding-left: 40px;
+}
+
+.repo_link {
+  position: relative;
+  text-align: center;
+  color:rgb(180, 180, 180);
+  display: block;
+  padding-right: 35px;
+}
+
+.repo_link:hover {
+  text-decoration: underline;
+}
+
+.repo_id{
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  padding-left: 35px;
+}
+
+.repo_id:hover{
+  text-decoration: underline;
+}
+
+.pushed-at-date{
+  float: right;
+  padding-top: 8px;
+  font-size: 10px;
+}
+
+.HomePage h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.HomePage p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 80px;
+}
+
+.HomePage p {
+  padding-bottom: 30px;
+}
+
+.GitLink {
+  position: relative;
+  top: 8px;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.GitLink:hover {
+  text-decoration: underline;
+}
+
+.ResumeHeading {
+  text-align: center;
+}
