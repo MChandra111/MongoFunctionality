@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 app.use(cors(
   {
-    origin: ["https://main-website-beige.vercel.app", "http://localhost:3000", "http://localhost:3000/About"],
+    origin: ["https://main-website-beige.vercel.app/About", "http://localhost:3000", "http://localhost:3000/About"],
     methods: ["POST", "GET"],
   }
 ))
@@ -21,9 +21,9 @@ app.use(cors(
 app.use(express.json());
 
 const itemsRouter = require('./routes/items');
-app.use('https://mongo-functionality-server.vercel.app/api/items', itemsRouter);
+app.use('/api/items', itemsRouter);
 
-app.get("https://mongo-functionality-server.vercel.app/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello World");
 })
 
