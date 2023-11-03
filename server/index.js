@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.use(express.json());
 
 const itemsRouter = require('./routes/items');
-app.use('https://mongo-functionality-server.vercel.app/api/items', itemsRouter);
+app.use('/api/items', itemsRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
