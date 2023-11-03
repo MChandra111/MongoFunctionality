@@ -21,9 +21,9 @@ app.use(cors(
 app.use(express.json());
 
 const itemsRouter = require('./routes/items');
-app.use('/api/items', itemsRouter);
+app.use('https://mongo-functionality-server.vercel.app/api/items', itemsRouter);
 
-app.get("/", (req, res) => {
+app.get("https://mongo-functionality-server.vercel.app/", (req, res) => {
   res.send("Hello World");
 })
 
