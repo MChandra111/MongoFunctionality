@@ -19,13 +19,28 @@ const DisplayEntries = () => {
     fetchData();
   }, []);
 
+  const displayDataByYear = data.reduce((acc, entry) => {
+    const { Year, Name } = entry;
+    if (!acc[Year]) {
+      acc[Year] = [];
+    }
+    acc[Year].push(entry);
+    acc[Year].sort((a, b) => a.Name.localeCompare(b.Name));
+    return acc;
+  }, {});
+
   return (
     <div>
-      <h2>First 3 Entries from MongoDB:</h2>
-      {data.map((entry) => (
-        <div key={entry._id}>
-          <p>Name: {entry.Name}</p>
-          <p>Title: {entry.Title}</p>
+      {Object.keys(displayDataByYear).map(year => (
+        <div key={year}>
+          <h2>{year}</h2>
+          {displayDataByYear[year].map(entry => (
+            <div key={entry._id}>
+              <p>Name: {entry.Name}</p>
+              <p>Title: {entry.Title}</p>
+              {/* Add other entry properties here */}
+            </div>
+          ))}
         </div>
       ))}
     </div>

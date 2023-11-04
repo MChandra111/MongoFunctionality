@@ -4,7 +4,7 @@ const Item = require('../models/Item'); // Your Mongoose model for items
 
 router.get('/', async (req, res) => {
   try {
-    const items = await Item.find().limit(3); // Adjust to fit your requirements
+    const items = await Item.find(); // Adjust to fit your requirements
     res.json(items);
   } catch (err) {
     console.error('Error fetching data', err);

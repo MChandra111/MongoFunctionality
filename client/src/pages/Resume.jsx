@@ -1,7 +1,7 @@
 import React from 'react';
 import DisplayEntries from '../database';
 
-function About() {
+function Resume() {
   return (
     <div className='ResumeHeading'>
       <h2>Under Development</h2>
@@ -11,4 +11,4 @@ function About() {
   );
 };
 
-export default About;
+export default Resume;

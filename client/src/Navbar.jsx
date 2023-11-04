@@ -14,7 +14,7 @@ function Navbar() {
                     <Link to="/Music">My Music</Link>         
                 </li>         
                 <li>           
-                    <Link to="/About">About</Link>         
+                    <Link to="/Resume">Resume</Link>         
                 </li>       
             </ul>   
         </nav>   
