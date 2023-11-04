@@ -30,3 +30,17 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+app.post('/api/items', async (req, res) => {
+  try {
+    const newData = req.body;
+
+    const newItem = new Item(newData);
+    await newItem.save();
+
+    res.status(201).json({ message: 'New entry added successfully' });
+  } catch (error) {
+    console.error('Error adding entry:', error);
+    res.status(500).json({ error: 'Failed to add new entry' });
+  }
+});
