@@ -24,8 +24,8 @@ const DisplayEntries = () => {
       <h2>First 3 Entries from MongoDB:</h2>
       {data.map((entry) => (
         <div key={entry._id}>
-          <p>Name: {entry.name}</p>
-          <p>Language: {entry.language}</p>
+          <p>Name: {entry.Name}</p>
+          <p>Language: {entry.Tanguage}</p>
         </div>
       ))}
     </div>
