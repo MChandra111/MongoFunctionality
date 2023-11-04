@@ -25,7 +25,7 @@ const DisplayEntries = () => {
       {data.map((entry) => (
         <div key={entry._id}>
           <p>Name: {entry.Name}</p>
-          <p>Language: {entry.Tanguage}</p>
+          <p>Title: {entry.Title}</p>
         </div>
       ))}
     </div>
