@@ -82,13 +82,16 @@ const DisplayEntries = () => {
                     >
                       {Object.keys(sortedData[year][name]).map((classification) => (
                         <motion.div key={classification}>
-                          <h4>{classification}</h4>
+                          <h3>{classification}</h3>
                           {sortedData[year][name][classification].map((entry) => (
                             <div key={entry._id}>
-                              <p>
+                              <p style={{fontWeight: 'bold'}}>
                                 <a href={entry.link} target="_blank" rel="noopener noreferrer">
                                   {entry.Title}
                                 </a>
+                              </p>
+                              <p style={{fontSize: "20px"}}>
+                                {entry.Description}
                               </p>
                               {/* Add other entry properties here */}
                             </div>
