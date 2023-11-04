@@ -9,7 +9,7 @@ const itemSchema = new mongoose.Schema({
   Description: String,
   Month: Number,
   Year: Number,
-  link: String
+  link: String,
   // Other fields as needed
 });
 
