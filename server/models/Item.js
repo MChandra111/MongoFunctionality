@@ -2,8 +2,14 @@
 const mongoose = require('mongoose');
 
 const itemSchema = new mongoose.Schema({
-  name: String,
-  language: String,
+  Entity: String,
+  Name: String,
+  Classification: String,
+  TItle: String,
+  Description: String,
+  Month: Number,
+  Year: Number,
+  link: String
   // Other fields as needed
 });
 

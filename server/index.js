@@ -24,7 +24,7 @@ const itemsRouter = require('./routes/items');
 app.use('/api/items', itemsRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("You're not supposed to be here!");
 })
 
 app.listen(PORT, () => {
