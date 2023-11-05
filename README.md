@@ -8,9 +8,9 @@ Personal website created using ReactJS on the frontend and MongoDB on the backen
 - Resume page with a list of Related Coursework and experience that is sourced from my MongoDB backend and dynamically updates based on input to the database.
 
 ## Languages and Tools:
-<code><img height="20" alt="javascript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="20" alt="react" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-<code><img height="20" alt="nodejs" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>  
+<code><img height="30" alt="javascript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="30" alt="react" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
+<code><img height="30" alt="nodejs" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>  
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MChandra111&layout=donut)
 ![Maheshwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=MChandra111&show_icons=true&theme=tokyonight&rank_icon=github&include_all_commits=true)
