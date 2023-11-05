@@ -8,4 +8,4 @@ Personal website created using ReactJS on the frontend and MongoDB on the backen
 - Resume page with a list of Related Coursework and experience that is sourced from my MongoDB backend and dynamically updates based on input to the database.
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MChandra111&layout=donut)
-![Maheshwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=MChandra&show_icons=true&theme=tokyonight&rank_icon=github&include_all_commits=true)
+![Maheshwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=MChandra111&show_icons=true&theme=tokyonight&rank_icon=github&include_all_commits=true)
