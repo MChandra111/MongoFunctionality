@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 app.use(cors(
   {
-    origin: ["https://main-website-beige.vercel.app", "http://localhost:3000"],
+    origin: ["https://maheshwarchandra.vercel.app", "http://localhost:3000"],
     methods: ["POST", "GET"],
   }
 ))
