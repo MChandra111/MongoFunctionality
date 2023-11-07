@@ -29,7 +29,7 @@ const AddEntryButton = () => {
 
   const addEntry = async () => {
     try {
-      const response = await fetch('https://mongo-functionality-server.vercel.app/api/items/add', {
+      const response = await fetch('https://mongo-functionality-server.vercel.app/api/items', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,6 +39,7 @@ const AddEntryButton = () => {
 
       if (response.ok) {
         console.log('New entry added successfully');
+        toggleForm();
       } else {
         console.error('Failed to add entry');
       }
