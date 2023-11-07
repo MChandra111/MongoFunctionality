@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.route('/add').post((req, res) => {
+router.route('/').post((req, res) => {
   const Entity = req.body.Entity;
   const Name = req.body.Name;
   const Classification = req.body.Classification;
