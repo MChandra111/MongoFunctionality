@@ -31,7 +31,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-app.post('/api/items', async (req, res) => {
+app.post('/api/items/add', async (req, res) => {
   try {
     const newData = req.body;
 

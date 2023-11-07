@@ -5,7 +5,7 @@ const itemSchema = new mongoose.Schema({
   Entity: String,
   Name: String,
   Classification: String,
-  TItle: String,
+  Title: String,
   Description: String,
   Month: Number,
   Year: Number,
